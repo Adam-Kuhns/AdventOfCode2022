@@ -72,14 +72,14 @@ namespace Part2
                         }
                         else
                         {
-                            for (int a = 0; a < moveNum; a++) //grabs from bottom
+                            for (int a = 0; a < moveNum; a++)
                             {
                                 char move = stacks[fromNum][(stacks[fromNum].Count - moveNum)+a];
                                 stacks[fromNum].RemoveAt((stacks[fromNum].Count - moveNum) + a);
                                 stacks[toNum].Add(move);
                             }
                         }
-                        
+
 
 
                         Console.WriteLine("------------------------------------");
